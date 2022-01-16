@@ -36,7 +36,9 @@ public class PetProvider extends ContentProvider {
     @Nullable
     @Override
     public Cursor query(@NonNull Uri uri, @Nullable String[] projection,
-                        @Nullable String selection, @Nullable String[] selectionArgs, @Nullable String sortOrder) {
+                        @Nullable String selection, @Nullable String[] selectionArgs,
+                        @Nullable String sortOrder) {
+
         SQLiteDatabase database = mDbHelper.getReadableDatabase();
 
         Cursor cursor;
